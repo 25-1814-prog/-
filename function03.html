@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        (매개변수)=>{함수내요}
+        */
+       const hi = function(){
+        return "안녕하세요";
+       }
+
+       console.log(hi());
+
+       const hi2 = () => {return "화살표함수 : 안녕하세요?"};
+       console.log(hi2());
+
+        const hi3 = () => "함수한줄 화살표 함수 : 안녕하세요!!!";
+
+        let hi4 = function(user1){
+            document.write(`매개변수한개일 경우 : ${user1} 님, 안녕하세요~`);
+        }
+        hi4(prompt("이름")());
+
+        const hi5 = (user2) => {document.write(`매개변수한개일 경우 화살표함수 : ${user2}님, 안녕하세요~`)}
+        hi5(prompt("매개변수한개일 경우 화살표함수 이름"));
+
+        let sum1 = function(a,b){
+            return a+b; 
+        }
+        alert(sum1(100,200));
+
+        let sum2 = () => a+b;
+        alert(sum2(300, 200));
+    </script>
+</body>
+</html>
